@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo-container {
+    width: 200px;
+    height: 150px;
+    right: 100px;
+    position: relative;
+    bottom: 30px;
+}
+.header-container {
+    background-color: black;
+    height: 150px;
+}
+
+.links-container {
+    text-transform: uppercase;
+    font-family: 'Coyote SemiBold DEMO', 'sans-serif';
+    font-size: .8rem;
+    font-weight: 400;
+    list-style: none;
+}
+
+.links-container li {
+    display: inline-block;
+    padding: 0px 10px;
+    position: relative;
+    left: 520px;
+    bottom: 30px;
+}
+
+.links-container li a {
+    transition: all 0.3s ease 0s;
+    color: white;
+    text-decoration: none;
+}
+
+.links-container li a:hover {
+    color: #0088a9;
+}
+
+
+.icons-container li{
+    display: inline-block;
+    list-style: none;
+    font-size: 21px;
+    color: white;
+}
+
+.icons-container li i{
+    padding: 15px;
+    left: 120px;
+    right: 10px;
+    bottom: 29px;
+    position: relative;
+    font-weight: 100;
+}
+
+
+
+
+
+
+
+
+
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.icons-container ul li{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    
+}
+
+.slider-frame {
+    overflow: hidden;
+    height: 800px;
+    width: 1200px;
+    margin-left: 360px;
+    margin-top: 20px;
+}
+
+/*---------SLIDE ANIMATION----------------*/
+
+@-webkit-keyframes slide_animation{
+    0% {left:0px;}
+    10% {left:0px;}
+    20% {left:1200px;}
+    30% {left:1200px;}
+    40% {left:2400px;}
+    50% {left:2400px;}
+    60% {left:1200px;}
+    70% {left:1200px;}
+    80% {left:0px;}
+    90% {left:0px;}
+    100% {left:0px;}
+}
+
+.slide-images {
+    width: 3600px;
+    height: 800px;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration: 33s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+}
+
+.img-container {
+    height: 800px;
+    width: 1200px;
+    position: relative;
+    float: left;
+}
+
+/*-------END OF ANIMATION PART-----------*/
+
+body, html {
+    height: 100%;
+  }
+  
+.menu {
+    /* The image used */
+    background-image: url("./images/menu.png");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@font-face {
+    font-family: 'Coyote SemiBold DEMO';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Coyote SemiBold DEMO'), url('./Coyote-SemiBoldDEMO.woff') format('woff');
+    }
