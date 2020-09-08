@@ -84,12 +84,46 @@
 }
 
 
+.slider {
+    height: 75vh;
+    background: url('./bopomofo-background-images/1-background.jpg') no-repeat center center/cover;
+    animation: slide 20s infinite;
+}
+
+@keyframes slide{
+    25%{
+        background: url('./bopomofo-background-images/2-background.jpg') no-repeat center center/cover;
+    }
+    25%{
+        background: url('./bopomofo-background-images/3-background.jpg') no-repeat center center/cover;
+    }
+    25%{
+        background: url('./bopomofo-background-images/4-background.JPG') no-repeat center center/cover;
+    }
+    25%{
+        background: url('./bopomofo-background-images/4-background.JPG') no-repeat center center/cover;
+    }
+}
+
+
 @font-face {
     font-family: 'Coyote SemiBold DEMO';
     font-style: normal;
     font-weight: normal;
     src: local('Coyote SemiBold DEMO'), url('./Coyote-SemiBoldDEMO.woff') format('woff');
     }
+
+
+@font-face {
+    font-family: 'DIN 2014';
+    src: url('DIN2014-Regular.eot');
+    src: local('DIN 2014 Regular'), local('DIN2014-Regular'),
+        url('DIN2014-Regular.eot?#iefix') format('embedded-opentype'),
+        url('DIN2014-Regular.woff') format('woff'),
+        url('DIN2014-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 .menu-container {
     height: 220vh;
@@ -99,4 +133,74 @@
     background: url('./images/hugamugmenu.jpg') no-repeat center center/cover;
     height: 100%;
     width: 100%;
+}
+
+.below-image-container {
+    height: 80vh;
+}
+
+.below-image {
+    background: url('./images/below-image.png') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.slogan {
+    font-family: 'Coyote SemiBold DEMO', 'sans-serif';
+    letter-spacing: 0em;
+    text-transform: none;
+    line-height: 1.2992;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0em;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 0;
+    white-space: pre-wrap;
+    transition-timing-function: ease;
+    transition-duration: 0.65s;
+    transition-delay: 0.274286s;
+    opacity: 1 !important;
+    transform: scale(1) !important;
+    justify-content: flex-end;
+    position: absolute;
+    top: 45%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    font-size: 2.8rem;
+}
+
+.button-below {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    top: 420px;
+    left: 280px;
+}
+
+.btn {
+    border: 2px solid white;
+    background: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-family: "DIN 2014";
+    cursor: pointer;
+    margin: 10px;
+    color: white;
+    letter-spacing: .02em;
+    text-decoration: none;
+    text-align: left;
+    display: inline-block;
+    line-height: normal;
+    opacity: 1;
+}
+
+.below-photos {
+    height: 100vh;
+}
+
+.below-photo-1 {
+    padding: 120px 250px;
 }
