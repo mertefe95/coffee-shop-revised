@@ -213,6 +213,7 @@
 .black-box {
     height: 45vh;
     background-color: black;
+    position: relative;
 }
 
 .black-box > p {
@@ -239,11 +240,71 @@
     color: #E26650;
     background-color: black;
     padding: 8px 13px;
-    text-align: center;
-    vertical-align: middle;
+    margin: 0 auto;
+    display: block;
+}
+
+.story-button:hover {
+    background-color: #E26650;
+    color: white;
 }
 
 .tiger-background {
-    height: 61vh;
-    background-image: url("./images/tigers-background.png");
+    height: 83vh;
+}
+
+.tiger {
+    background: url('./images/tigerz.png') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.footer {
+    background-color: #E26650;
+    color: white;
+    font-family: "DIN 2014";
+    height: 30vh;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+
+.footer-logo {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.left-footer-column {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.middle-footer-column {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.right-footer-column {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+img.footer-logo-container {
+    width: 200px;
+    height: 150px;
 }
