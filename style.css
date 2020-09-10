@@ -18,7 +18,7 @@
 
 .links-container {
     text-transform: uppercase;
-    font-family: 'Coyote SemiBold DEMO', 'sans-serif';
+    font-family: 'Inter', 'sans-serif';
     font-size: .8rem;
     font-weight: 400;
     list-style: none;
@@ -148,7 +148,7 @@
 }
 
 .slogan {
-    font-family: 'Coyote SemiBold DEMO', 'sans-serif';
+    font-family: 'Inter', 'sans-serif';
     letter-spacing: 0em;
     text-transform: none;
     line-height: 1.2992;
@@ -307,4 +307,94 @@
 img.footer-logo-container {
     width: 200px;
     height: 150px;
+}
+
+
+@font-face{
+    font-family: "Inter";
+    src: url("./Inter.ttf") format("truetype");
+}
+
+.below-photos {
+    display: grid;
+    grid-gap: 10px;
+    padding: 100px 200px;
+    position: relative;
+    height: 120vh;
+}
+
+.below-photo-1 {
+    grid-column: 1;
+    grid-row: 1;
+    position: relative;
+}
+
+.below-photo-2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.below-photo-3 {
+    grid-column: 1;
+    grid-row: 2;
+    position: absolute;
+    bottom: 190px;
+    left: 200px;
+}
+
+.below-button {
+    grid-column: 2;
+    grid-row: 2;
+    position: relative;
+    left: 205px;
+    font-family: "DIN 2014";
+}
+
+.below-button-text {
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0em;
+    text-transform: none;
+    line-height: 1.8;
+    margin: 1rem 0;
+    transition-property: opacity;
+    opacity: 1 !important;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    transition-timing-function: ease;
+    transition-duration: 0.65s;
+    transition-delay: 0.308571s;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 30px 0px;
+    font-family: "DIN 2014";
+}
+
+.instagram-button {
+    background: transparent;
+    border: 2px solid #e26650;
+    padding: .8em 1.336em;
+    color: #e26650;
+    line-height: normal;
+    display: inline-block;
+    transition: 0.1s background-color linear, 0.1s color linear;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 550;
+    font-style: normal;
+    text-transform: none;
+    letter-spacing: .02em;
+    cursor: pointer;
+    font-family: "DIN 2014";
+}
+
+.instagram-button:hover {
+    background: #e26650;
+    color: #fff;
+}
+
+.right-footer-column > a {
+    color: white;
 }
