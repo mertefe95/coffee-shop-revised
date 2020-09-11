@@ -19,7 +19,7 @@
 .links-container {
     text-transform: uppercase;
     font-family: 'Inter', 'sans-serif';
-    font-size: .8rem;
+    font-size: .9rem;
     font-weight: 600;
     list-style: none;
 }
@@ -129,8 +129,8 @@
     height: 220vh;
 }
 
+
 .menu {
-    background: url('./images/hugamugmenu.jpg') no-repeat center center/cover;
     height: 100%;
     width: 100%;
 }
@@ -272,7 +272,7 @@
     background-color: #E26650;
     color: white;
     font-family: "DIN 2014";
-    height: 30vh;
+    height: 50vh;
 }
 
 .footer {
@@ -281,8 +281,8 @@
     grid-template-rows: 1fr 2fr;
     grid-gap: 10px;
     padding: 10px;
-    justify-items: center;
-    align-items: center;
+    justify-content: space-around;
+    align-content: space-evenly;
 }
 
 
