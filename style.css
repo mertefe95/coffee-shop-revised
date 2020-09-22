@@ -360,6 +360,10 @@ img.footer-logo-container {
     height: 150px;
 }
 
+img.footer-logo-container {
+    margin: 38px 0 0 0;
+}
+
 .beneath-footer-container {
     display: flex;
     justify-content: space-evenly;
@@ -435,32 +439,23 @@ img.footer-logo-container {
     background-color: #E26650;
     color: white;
     font-family: "DIN 2014";
-    height: 47vh;
-
-    
+    height: 42vh;
 }
 
 .inner-footer {
     width: 100%;
-    margin: auto;
-    padding: 30px 50px;
     display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
     justify-content: center;
 }
 
 .footer-items {
     width: 25%;
-    padding: 10px 20px;
-    box-sizing: border-box;
 }
 
 .footer-items {
     color: grey;
     font-size: 16px;
     text-align: justify;
-    line-height: 25px;
 }
 
 .footer-items ul {
@@ -478,14 +473,12 @@ img.footer-logo-container {
 }
 
 .footer-items ul li {
-    margin: 10px 0;
     height: 25px;
 }
 
 .footer-items li i  {
     margin-right: 20px;
 }
-
 
 .footer-items .first-ul {
     font-size: 0.9rem;
